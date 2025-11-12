@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.score h2 {
+  margin: 0;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.choice {
+  flex: 1;
+  margin: 0 0.3rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Hover only when enabled */
+.choice:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* 🔒 Disabled button visual feedback */
+.choice:disabled {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: not-allowed;
+  transform: none;
+  filter: grayscale(100%) brightness(0.7);
+  opacity: 0.6;
+}
+
+.results p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+/* Win/Lose colors */
+.win {
+  color: #7CFC00;
+  font-weight: bold;
+}
+
+.lose {
+  color: #FF6347;
+  font-weight: bold;
+}
+
+.tie {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+#play-again {
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#play-again:hover {
+  background: rgba(255,255,255,0.4);
+  transform: scale(1.05);
+}
