@@ -6,7 +6,7 @@ The main goal of this project was to practice **DOM manipulation**, **event hand
 It allows a player to compete against the computer, with live score updates and a simple UI that displays round results and a final winner.
 
 ## Live Demo
-[View the Live Project Here]()
+[View the Live Project Here](https://pavicevictea.github.io/odin-rock-paper-scissors/)
 
 ## Skills Demonstrated
 - Writing clean and semantic HTML
